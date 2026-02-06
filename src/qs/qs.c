@@ -451,6 +451,7 @@ void QS_endRec_(void) {
     QSCtr const end     = QS_priv_.end;
     uint8_t b = QS_priv_.chksum;
     b ^= 0xFFU;   // invert the bits in the checksum
+    b &= 0xFFU;
 
     QS_priv_.used += 2U; // 2 bytes about to be added
 

@@ -156,7 +156,7 @@ enum QSpyRxRecords {
 
 #define QS_INSERT_ESC_BYTE_(b_)                      \
     chksum = (uint8_t)(chksum + (b_));               \
-    if (((b_) != QS_FRAME) && ((b_) != QS_ESC)) {    \
+    if ((((b_) & 0xFF) != QS_FRAME) && (((b_) & 0xFF) != QS_ESC)) {    \
         QS_INSERT_BYTE_(b_)                          \
     }                                                \
     else {                                           \

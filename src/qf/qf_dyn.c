@@ -93,7 +93,7 @@ void QF_poolInit(
     #ifdef Q_SPY
     // generate the object-dictionary entry for the initialized pool
     {
-        uint8_t obj_name[9] = "EvtPool?";
+        char obj_name[9] = "EvtPool?";
         obj_name[7] = (uint8_t)((uint8_t)'0' + poolNum + 1U);
         QS_obj_dict_pre_(&QF_priv_.ePool_[poolNum], (char const *)obj_name);
     }
