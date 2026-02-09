@@ -181,7 +181,7 @@ enum FreeRTOS_TaskAttrs {
 #if (configSUPPORT_STATIC_ALLOCATION > 0)
     void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer,
                                        StackType_t **ppxIdleTaskStackBuffer,
-                                       uint32_t *pulIdleTaskStackSize);
+                                       configSTACK_DEPTH_TYPE *pulIdleTaskStackSize);
 #endif
 
 //============================================================================
