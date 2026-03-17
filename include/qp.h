@@ -107,10 +107,10 @@ typedef int int_t;
 typedef int enum_t;
 
 //${glob-types::float32_t} ...................................................
-typedef float float32_t;
+//typedef float float32_t;
 
 //${glob-types::float64_t} ...................................................
-typedef double float64_t;
+//typedef double float64_t;
 //$enddecl${glob-types} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 //$declare${QEP} vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
